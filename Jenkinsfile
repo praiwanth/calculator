@@ -3,6 +3,9 @@ pipeline {
      stages { 
           stage("Compile") { 
                steps { 
+                    sh '''#!/bin/bash
+                         chmod +x ./gradlew
+                         '''
                     sh "./gradlew compileJava" 
                } 
           } 

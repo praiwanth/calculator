@@ -6,7 +6,7 @@ pipeline {
                     sh '''#!/bin/bash
                          chmod +x ./gradlew
                          '''
-                    sh "./gradlew compileJava" 
+                    sh "sudo ./gradlew compileJava" 
                } 
           } 
           stage("Unit test") { 
